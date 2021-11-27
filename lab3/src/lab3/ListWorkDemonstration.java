@@ -2,8 +2,8 @@ package lab3;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 /** 
- * Класс вывода таблицы с временем работы.
- * @author Суховеркова Екатерина (3 курс 3 группа)
+ * РљР»Р°СЃСЃ РІС‹РІРѕРґР° С‚Р°Р±Р»РёС†С‹ СЃ РІСЂРµРјРµРЅРµРј СЂР°Р±РѕС‚С‹.
+ * @author РЎСѓС…РѕРІРµСЂРєРѕРІР° Р•РєР°С‚РµСЂРёРЅР° (3 РєСѓСЂСЃ 3 РіСЂСѓРїРїР°)
 */
 public class ListWorkDemonstration {
 	public static void main(String[] args) {
@@ -11,23 +11,23 @@ public class ListWorkDemonstration {
 		do
 		{
 			var in = new Scanner(System.in);
-	        System.out.println("Введите количество вызовов методов:");
+	        System.out.println("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ РІС‹Р·РѕРІРѕРІ РјРµС‚РѕРґРѕРІ:");
 	        var n = 0;
 	        
 	        try {
 	            n = in.nextInt();
 	        } catch (InputMismatchException ex) {
-	            System.out.println("Ошибка ввода.");
+	            System.out.println("РћС€РёР±РєР° РІРІРѕРґР°.");
 	        }
 	        
-	        ArrayListWork arrayList = new ArrayListWork(n); // @value arrayList - создание нового объекта типа ArrayListWork
-	        LinkedListWork linkedList = new LinkedListWork(); // @value linkedList - создание нового объекта типа LinkedListWork
+	        ArrayListWork arrayList = new ArrayListWork(n); // @value arrayList - СЃРѕР·РґР°РЅРёРµ РЅРѕРІРѕРіРѕ РѕР±СЉРµРєС‚Р° С‚РёРїР° ArrayListWork
+	        LinkedListWork linkedList = new LinkedListWork(); // @value linkedList - СЃРѕР·РґР°РЅРёРµ РЅРѕРІРѕРіРѕ РѕР±СЉРµРєС‚Р° С‚РёРїР° LinkedListWork
 	        PrintResult.header();
 	        PrintResult.resultArrayList(n, arrayList);
 	        System.out.println();
 	        PrintResult.resultLinkedList(n, linkedList);
 	        
-	        System.out.println("\nПродолжить - a, выйти - q.");
+	        System.out.println("\nРџСЂРѕРґРѕР»Р¶РёС‚СЊ - a, РІС‹Р№С‚Рё - q.");
 			Scanner in2 = new Scanner(System.in);
 			f = in2.nextLine();
 		} while (f.equals("a"));
