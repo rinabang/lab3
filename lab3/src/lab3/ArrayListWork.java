@@ -2,25 +2,25 @@ package lab3;
 import java.util.ArrayList;
 import java.util.List;
 /** 
- * Класс, вызывающий основные методы коллекции ArrayList
- * @author Суховеркова Екатерина (3 курс 3 группа)
+ * РљР»Р°СЃСЃ, РІС‹Р·С‹РІР°СЋС‰РёР№ РѕСЃРЅРѕРІРЅС‹Рµ РјРµС‚РѕРґС‹ РєРѕР»Р»РµРєС†РёРё ArrayList
+ * @author РЎСѓС…РѕРІРµСЂРєРѕРІР° Р•РєР°С‚РµСЂРёРЅР° (3 РєСѓСЂСЃ 3 РіСЂСѓРїРїР°)
 */
 public class ArrayListWork {
-	/** Поле ArrayList */
+	/** РџРѕР»Рµ ArrayList */
 	public List<Integer> arrayList;
-	/** Поле размера arrayList */
+	/** РџРѕР»Рµ СЂР°Р·РјРµСЂР° arrayList */
     private int size;
     /**
-     * Конструктор ArrayList
-     * @param s - размер
+     * РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ ArrayList
+     * @param s - СЂР°Р·РјРµСЂ
      */
     public ArrayListWork(int s) {
         size = s;
         arrayList = new ArrayList<>(size);
     }
     /**
-     * Метод заполнения ArrayList
-     * @return возвращает время, необходимое для заполнения
+     * РњРµС‚РѕРґ Р·Р°РїРѕР»РЅРµРЅРёСЏ ArrayList
+     * @return РІРѕР·РІСЂР°С‰Р°РµС‚ РІСЂРµРјСЏ, РЅРµРѕР±С…РѕРґРёРјРѕРµ РґР»СЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ
      */
     public long fillArrayList() {
         var startTime = System.nanoTime();
@@ -29,9 +29,9 @@ public class ArrayListWork {
         return System.nanoTime() - startTime;
     }
     /**
-     * Метод удаления элемента для ArrayList
-     * @param index - индекс элемента для удаления
-     * @return возвращает время, необходимое для удаления элемента
+     * РњРµС‚РѕРґ СѓРґР°Р»РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р° РґР»СЏ ArrayList
+     * @param index - РёРЅРґРµРєСЃ СЌР»РµРјРµРЅС‚Р° РґР»СЏ СѓРґР°Р»РµРЅРёСЏ
+     * @return РІРѕР·РІСЂР°С‰Р°РµС‚ РІСЂРµРјСЏ, РЅРµРѕР±С…РѕРґРёРјРѕРµ РґР»СЏ СѓРґР°Р»РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р°
      */
     public long delete(int index) {
         var startTime = System.nanoTime();
@@ -39,9 +39,9 @@ public class ArrayListWork {
         return System.nanoTime() - startTime;
     }
     /**
-     * Метод добавления элемента для ArrayList
-     * @param index - индекс элемента для добавления
-     * @return возвращает время, необходимое для добавления элемента
+     * РњРµС‚РѕРґ РґРѕР±Р°РІР»РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р° РґР»СЏ ArrayList
+     * @param index - РёРЅРґРµРєСЃ СЌР»РµРјРµРЅС‚Р° РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ
+     * @return РІРѕР·РІСЂР°С‰Р°РµС‚ РІСЂРµРјСЏ, РЅРµРѕР±С…РѕРґРёРјРѕРµ РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р°
      */
     public long add(int index) {
         var startTime = System.nanoTime();
@@ -49,9 +49,9 @@ public class ArrayListWork {
         return System.nanoTime() - startTime;
     }
     /**
-     * Метод получения элемента для ArrayList
-     * @param index - индекс элемента для получения
-     * @return возвращает время, необходимое для получения элемента
+     * РњРµС‚РѕРґ РїРѕР»СѓС‡РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р° РґР»СЏ ArrayList
+     * @param index - РёРЅРґРµРєСЃ СЌР»РµРјРµРЅС‚Р° РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ
+     * @return РІРѕР·РІСЂР°С‰Р°РµС‚ РІСЂРµРјСЏ, РЅРµРѕР±С…РѕРґРёРјРѕРµ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р°
      */
     public long get(int index) {
         var startTime = System.nanoTime();
