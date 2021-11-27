@@ -2,22 +2,22 @@ package lab3;
 import java.util.LinkedList;
 import java.util.List;
 /** 
- * Класс, вызывающий основные методы коллекции LinkedList
- * @author Суховеркова Екатерина (3 курс 3 группа)
+ * РљР»Р°СЃСЃ, РІС‹Р·С‹РІР°СЋС‰РёР№ РѕСЃРЅРѕРІРЅС‹Рµ РјРµС‚РѕРґС‹ РєРѕР»Р»РµРєС†РёРё LinkedList
+ * @author РЎСѓС…РѕРІРµСЂРєРѕРІР° Р•РєР°С‚РµСЂРёРЅР° (3 РєСѓСЂСЃ 3 РіСЂСѓРїРїР°)
 */
 public class LinkedListWork {
-	/** Поле LinkedList */
+	/** РџРѕР»Рµ LinkedList */
 	public List<Integer> linkedList;
 	/**
-     * Конструктор LinkedList
+     * РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ LinkedList
      */
     public LinkedListWork() {
         linkedList = new LinkedList<>();
     }
     /**
-     * Метод заполнения LinkedList
-     * @param count - количество элементов
-     * @return возвращает время, необходимое для заполнения
+     * РњРµС‚РѕРґ Р·Р°РїРѕР»РЅРµРЅРёСЏ LinkedList
+     * @param count - РєРѕР»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ
+     * @return РІРѕР·РІСЂР°С‰Р°РµС‚ РІСЂРµРјСЏ, РЅРµРѕР±С…РѕРґРёРјРѕРµ РґР»СЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ
      */
     public long fillLinkedList(int count) {
         var startTime = System.nanoTime();
@@ -26,9 +26,9 @@ public class LinkedListWork {
         return System.nanoTime() - startTime;
     }
     /**
-     * Метод удаления элемента для LinkedList
-     * @param index - индекс элемента для удаления
-     * @return возвращает время, необходимое для удаления элемента
+     * РњРµС‚РѕРґ СѓРґР°Р»РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р° РґР»СЏ LinkedList
+     * @param index - РёРЅРґРµРєСЃ СЌР»РµРјРµРЅС‚Р° РґР»СЏ СѓРґР°Р»РµРЅРёСЏ
+     * @return РІРѕР·РІСЂР°С‰Р°РµС‚ РІСЂРµРјСЏ, РЅРµРѕР±С…РѕРґРёРјРѕРµ РґР»СЏ СѓРґР°Р»РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р°
      */
     public long delete(int index) {
         var startTime = System.nanoTime();
@@ -36,9 +36,9 @@ public class LinkedListWork {
         return System.nanoTime() - startTime;
     }
     /**
-     * Метод добавления элемента для LinkedList
-     * @param index - индекс элемента для добавления
-     * @return возвращает время, необходимое для добавления элемента
+     * РњРµС‚РѕРґ РґРѕР±Р°РІР»РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р° РґР»СЏ LinkedList
+     * @param index - РёРЅРґРµРєСЃ СЌР»РµРјРµРЅС‚Р° РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ
+     * @return РІРѕР·РІСЂР°С‰Р°РµС‚ РІСЂРµРјСЏ, РЅРµРѕР±С…РѕРґРёРјРѕРµ РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р°
      */
     public long add(int index) {
         var startTime = System.nanoTime();
@@ -46,9 +46,9 @@ public class LinkedListWork {
         return System.nanoTime() - startTime;
     }
     /**
-     * Метод получения элемента для LinkedList
-     * @param index - индекс элемента для получения
-     * @return возвращает время, необходимое для получения элемента
+     * РњРµС‚РѕРґ РїРѕР»СѓС‡РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р° РґР»СЏ LinkedList
+     * @param index - РёРЅРґРµРєСЃ СЌР»РµРјРµРЅС‚Р° РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ
+     * @return РІРѕР·РІСЂР°С‰Р°РµС‚ РІСЂРµРјСЏ, РЅРµРѕР±С…РѕРґРёРјРѕРµ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р°
      */
     public long get(int index) {
         var startTime = System.nanoTime();
